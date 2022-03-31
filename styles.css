@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 /* Decoration Font */
-@font-face {
+@font-face{
     font-family: 'Pesta';
     src: url("fonts/PestaTahunBaru.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
+@font-face{
     font-family: 'Zephiroth';
     src: url("fonts/Zephiroth.ttf") format("truetype");
     font-weight: normal;
@@ -17,39 +17,34 @@
 }
 
 /*Selector Universal */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Oxygen', sans-serif;
 }
-
 /* Desplazamiento Suave */
-html {
+html{
     scroll-behavior: smooth;
 }
-
 /* Selección de Texto */
-::selection {
+::selection{
     background-color: rgba(255, 69, 0, 0.31);
 }
-
 /* Barra de Desplazamiento */
-::-webkit-scrollbar {
+::-webkit-scrollbar{
     width: 10px;
-    background-color: #F3EED9;
-    /*
+    background-color: #F3EED9;/*
     background-color: rgba(118, 118, 118, 0.68);*/
 }
-
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
     background-color: #510000;
     border-radius: 6px;
 }
 
 /* Barra de Navegación */
-.navbar {
+.navbar{
     position: fixed;
     background-color: transparent;
     width: 100%;
@@ -58,21 +53,20 @@ html {
     z-index: 999;
     transition: .3s linear;
 }
-
 /* Delimitador para el contenido */
-.inner-width {
+.inner-width{
     max-width: 1300px;
     margin: auto;
     padding: 0 40px;
 }
 
-.navbar .inner-width {
+.navbar .inner-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo {
+.logo{
     width: 80px;
     height: 80px;
     background-position: center;
@@ -82,7 +76,7 @@ html {
 }
 
 /* Menu Contraído */
-.menu-toggler {
+.menu-toggler{
     background: none;
     width: 30px;
     border: none;
@@ -93,7 +87,7 @@ html {
     display: none;
 }
 
-.menu-toggler span {
+.menu-toggler span{
     display: block;
     height: 3px;
     background-color: #f1f1f1;
@@ -103,36 +97,35 @@ html {
 }
 
 /* Enlaces de Barra de Navegación */
-.navbar-menu a {
+.navbar-menu a{
     color: #f1f1f1;
     font-size: 18px;
     font-weight: bold;
     margin-left: 30px;
     transition: .2s linear;
 }
-
-.navbar-menu a:hover {
+.navbar-menu a:hover{
     padding: 2px;
     border-bottom: 2px solid #f1f1f1;
 }
 
 /* Enlace de la Barra de Navegación Activo */
-.navbar-menu .selected {
+.navbar-menu .selected{
     border-bottom: 2px solid #f1f1f1;
 }
 
 /*Posicionamiento fijo de la barra de navegación y cambio de color*/
-.sticky {
+.sticky{
     background-color: rgb(111, 0, 22);
     padding: 18px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .30);
+    box-shadow: 0 5px 10px rgba(0,0,0, .30);
 }
 
-.sticky .navbar-menu a {
+.sticky .navbar-menu a{
     color: #f1f1f1;
 }
 
-.sticky .menu-toggler span {
+.sticky .menu-toggler span{
     background-color: #f1f1f1;
 }
 
@@ -141,16 +134,16 @@ html {
 Inicio INDEX.HTML 
 */
 /* Sección de pantalla completa */
-#home {
+#home{
     height: 100vh;
     min-height: 500px;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 75%), url("./img/background.jpg");
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.50) 75%), url("./img/background.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
-#home .inner-width {
+#home .inner-width{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,12 +151,12 @@ Inicio INDEX.HTML
     height: 100%;
 }
 
-#home .content {
+#home .content{
     width: 100%;
     color: #f1f1f1;
 }
 
-#home .content h1 {
+#home .content h1{
     font-family: 'Pesta', sans-serif;
     font-size: 50px;
     margin-top: 80px;
@@ -171,19 +164,19 @@ Inicio INDEX.HTML
     font-weight: 300;
 }
 
-#home .content p {
+#home .content p{
     font-size: 28px;
     font-weight: 400;
     font-style: italic;
 }
 
 /* Sección # 1 */
-section {
+section{
     padding: 60px 40px;
     background-color: #f1f1f1;
 }
 
-.section-title {
+.section-title{
     text-align: center;
     margin-bottom: 30px;
     position: relative;
@@ -194,7 +187,7 @@ section {
 }
 
 /* Separador del Título */
-.section-title::before {
+.section-title::before{
     content: "";
     position: absolute;
     width: 80px;
@@ -203,8 +196,7 @@ section {
     bottom: 0;
     left: calc(50% - 40px);
 }
-
-.section-title::after {
+.section-title::after{
     content: "";
     position: absolute;
     width: 16px;
@@ -216,7 +208,7 @@ section {
 }
 
 /* Estilo de Texto para citas */
-.date {
+.date{
     text-align: center;
     margin-bottom: 30px;
     color: #1F1F1F;
@@ -226,92 +218,89 @@ section {
 }
 
 /* Contenido de Izquierda y derecha */
-.about-content {
+.about-content{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
-.left {
+.left{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin-right: 60px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.30);
 }
 
-.rigth {
+.rigth{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin-left: 60px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.30);
     cursor: pointer;
     overflow: hidden;
 }
 
-.rigth video {
+.rigth video{
     width: 100%;
     height: 100%;
     outline: none;
     transition: .2s linear;
 }
-
-.rigth video:hover {
+.rigth video:hover{
     transform: scale(1.1);
 }
 
-.about-text {
+.about-text{
     flex: 1;
 }
 
-.about-text h2 {
+.about-text h2{
     font-size: 26px;
     color: #1F1F1F;
-    font-weight: 500;
+    font-weight: 700;
 }
 
-.about-text p {
-    font-size: 17px;
+.about-text p{
+    font-size: 18px;
     text-align: justify;
+    font-weight: 400;
     line-height: 26px;
     margin-top: 20px;
     color: #1F1F1F;
 }
 
-section.map {
+section.map{
     width: 100%;
 }
 
-section.map iframe {
+section.map iframe{
     width: 100%;
     height: 400px;
     border-radius: 4px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.40);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.40);
 }
 
 /* Barra Separadora */
-section.dark {
+section.dark{
     background-color: #1F1F1F;
     padding: 30px 10px;
 }
-
-section.dark .section-title {
+section.dark .section-title{
     color: #fafafa;
     font-weight: 400;
 }
-
-section.dark .section-title::before {
+section.dark .section-title::before{
     background-color: #FFFEFE;
 }
-
-section.dark .section-title::after {
+section.dark .section-title::after{
     border: 4px solid #1F1F1F;
 }
 
 /* Sección Negra */
-.dark-box {
+.dark-box{
     width: 100%;
     margin: auto;
     display: flex;
@@ -319,16 +308,15 @@ section.dark .section-title::after {
     flex-wrap: wrap;
     /*background-color: #F3EED9;*/
 }
-
 /* Contenido*/
-.dbox {
+.dbox{
     width: calc(33% - 20px);
     text-align: center;
     margin: 10px 0;
     padding: 20px 20px;
 }
 
-.dbox a {
+.dbox a{
     color: #fafafa;
     font-size: 18px;
     transition: .2s linear;
@@ -336,11 +324,10 @@ section.dark .section-title::after {
     transition: .2s linear;
 }
 
-.dbox a:hover {
+.dbox a:hover{
     text-shadow: 0 0px 10px rgba(255, 254, 254, 0.5);
     /*border-bottom: 2px solid #1F1F1F;*/
 }
-
 /* 
 FIN INDEX.HTML
 */
@@ -351,13 +338,13 @@ INICIO ABOUT.HTML
 */
 
 /* Línea de Tiempo */
-.time-line {
+.time-line{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.block {
+.block{
     width: calc(50% - 20px);
     background-color: #FFFEFE;
     border: 1px dashed #1F1F1F;
@@ -367,7 +354,7 @@ INICIO ABOUT.HTML
     position: relative;
 }
 
-.block::before {
+.block::before{
     content: "";
     position: absolute;
     width: 1px;
@@ -378,7 +365,7 @@ INICIO ABOUT.HTML
     transform: translateY(-50%);
 }
 
-.block::after {
+.block::after{
     content: "";
     position: absolute;
     width: 16px;
@@ -390,23 +377,21 @@ INICIO ABOUT.HTML
 }
 
 /* Fecha: */
-.block h4 {
+.block h4{
     font-size: 17px;
     color: #1f1f1f;
     font-weight: 500;
 }
-
 /* Título de la sección */
-.block h3 {
+.block h3{
     font-size: 16px;
     margin: 10px 0;
     color: #1F1F1F;
     font-weight: 500;
     text-decoration: underline;
 }
-
 /* Contenido de la sección */
-.block p {
+.block p{
     font-size: 15px;
     color: #1f1f1f;
 }
@@ -444,17 +429,16 @@ Sección Himno ColPilar
     background-position: center;*/
 }
 
-.player audio {
+.player audio{
     outline: none;
 }
 
-.player audio::-webkit-media-controls-enclosure {
+.player audio::-webkit-media-controls-enclosure{
     background: #fffefe;
     border-radius: 6px;
 }
 
-.strophe h4,
-.player h4 {
+.strophe h4, .player h4{
     font-family: 'Tangerine', cursive;
     font-weight: 100;
     font-size: 36px;
@@ -463,7 +447,7 @@ Sección Himno ColPilar
     text-decoration: underline;
 }
 
-.strophe p {
+.strophe p{
     font-weight: 300;
     font-size: 17px;
     margin-bottom: 6px;
@@ -488,7 +472,7 @@ Sección Himno ColPilar
     color: #1F1F1F;
 }
 
-.simbol img {
+.simbol img{
     width: 100%;
     height: 350px;
     border-radius: 6px 6px 0 0;
@@ -497,14 +481,14 @@ Sección Himno ColPilar
     object-fit: fill;
 }
 
-.simbol h2 {
+.simbol h2{
     font-weight: 600;
     font-size: 18px;
     padding: 10px 20px;
     color: #1F1F1F;
 }
 
-.simbol p {
+.simbol p{
     font-size: 17px;
     text-align: center;
     line-height: 26px;
@@ -515,7 +499,7 @@ Sección Himno ColPilar
 
 
 /* Pie de Página */
-footer {
+footer{
 
     background: #fdf6f6 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23E6E6E6' fill-opacity='0.15' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
     background-position: center;
@@ -523,36 +507,36 @@ footer {
     padding: 15px 0;
 }
 
-.footer-links {
+.footer-links{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px;
+    column-gap:  50px;
     align-items: flex-start;
     justify-content: center;
     text-align: left;
     padding: 15px 0;
 }
 
-.footer-links ul {
+.footer-links ul{
     margin: 0 auto;
     list-style: none;
 }
 
-.footer-links ul h3 {
+.footer-links ul h3{
     color: #1F1F1F;
     font-weight: 600;
     font-size: 16px;
     padding: 15px 0px;
 }
 
-.footer-links ul p {
+.footer-links ul p{
     color: #1F1F1F;
     font-size: 15px;
     line-height: 200%;
     font-weight: 400;
 }
 
-.footer-links ul li {
+.footer-links ul li{
     margin: 10px 0px;
     color: #1f1f1f;
     font-size: 15px;
@@ -560,25 +544,24 @@ footer {
     line-height: 200%;
 }
 
-.footer-links ul li a {
+.footer-links ul li a{
     color: #1F1F1F;
     font-size: 15px;
     font-weight: 400;
     line-height: 200%;
 }
-
-.footer-links ul li a:hover {
+.footer-links ul li a:hover{
     text-shadow: 0 5px 8px rgba(111, 0, 22, 0.9);
 }
 
-.footer-links ul li i {
+.footer-links ul li i{
     color: #1F1F1F;
     font-size: 17px;
     margin-right: 15px;
 }
 
 /* CopyRigth */
-.copyright {
+.copyright{
     padding: 20px 0px;
     background-color: #1F1F1F;
     color: #FFFEFE;
@@ -587,20 +570,19 @@ footer {
     font-weight: 300;
 }
 
-.copyright a {
+.copyright a{
     font-size: 16px;
     color: #FFFEFE;
     font-weight: 300;
     opacity: .8;
 }
-
-.copyright a:hover {
+.copyright a:hover{
     font-weight: 400;
     opacity: 1;
 }
 
 /* Botón Arriba*/
-.goTop {
+.goTop{
     position: fixed;
     z-index: 999;
     bottom: 40px;
@@ -615,7 +597,12 @@ footer {
     outline: none;
     display: none;
 }
-
-.goTop:hover {
+.goTop:hover{
     background-color: #8E232B;
 }
+
+
+
+
+
+
