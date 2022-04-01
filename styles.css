@@ -90,6 +90,7 @@ html{
 .menu-toggler span{
     display: block;
     height: 3px;
+    border-radius: 5px;
     background-color: #f1f1f1;
     margin: 6px 0;
     position: relative;
@@ -158,7 +159,7 @@ Inicio INDEX.HTML
 
 #home .content h1{
     font-family: 'Pesta', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 80px;
     margin-bottom: 30px;
     font-weight: 300;
@@ -634,6 +635,109 @@ footer{
     background-color: #F85C52;
 }
 
+/* Media Querys*/
+
+@media screen and (max-width: 900px){
+  
+    .menu-toggler{
+    display: block;
+  }
+
+  .navbar-menu{
+    text-align: center;
+    position: fixed;
+    height: 50%;
+    width: 50%;
+    background-color: #6F0016;
+    opacity: 0.8;
+    top: 0;
+    right: -100%;
+    max-width: 400px;
+    padding: 50px;
+    border: 2px solid #F85C52;
+    transition: .3s linear;
+  }
+
+  .navbar-menu a{
+    opacity: 100%;
+    display: block;
+    font-size: 17px;
+    margin: 20px 0;
+  }
+  
+  .navbar-menu.active{
+    right: 0;
+  }
+
+  .menu-toggler.active span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 4px;
+  }
+
+  .menu-toggler.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .menu-toggler.active span:nth-child(3){
+    transform: rotate(45deg);
+    bottom: 14px;
+  }
+
+  .inner-width{
+        max-width: 800px;
+    }
+    
+    .left{
+        margin: 0 auto 60px;
+    }
+    
+    .rigth{
+        margin: 60px auto 0;
+    }
+    
+    .about-text{
+        flex: 100%;
+        text-align: center;
+    }
+    
+    .strophe, .player{
+        width: calc(50% - 20px);
+    }
+    
+    .block{
+        width: calc(100% - 20px);
+        margin-left: auto;
+    }
+    
+    .work{
+        width: calc(50% - 10px);
+    }
+    
+    .contact-info .item{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    
+    .inner-width{
+        padding: 0 20px;
+    }
+    
+    .skill{
+        width: 100%;
+    }
+    
+    .service{
+        width: 100%;
+    }
+    
+    .work{
+        width: 100%;
+    }
+}
 
 
 
