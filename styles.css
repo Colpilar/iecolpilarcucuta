@@ -653,7 +653,7 @@ footer{
     top: 0;
     right: -100%;
     max-width: 400px;
-    padding: 50px;
+    padding: 50px 80px;
     border: 2px solid #F85C52;
     transition: .3s linear;
   }
