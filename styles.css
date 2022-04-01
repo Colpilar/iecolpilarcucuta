@@ -740,8 +740,9 @@ footer{
 }
 
 @media screen and (max-width: 250px){
-    .navbar-menu{
-    padding: 40px 25px;    
+    .inner-width{
+        padding: 0 10px;
     }
+
 }
 
