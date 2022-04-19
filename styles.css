@@ -1,5 +1,5 @@
 ﻿/* Body Font */
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
 /* Decoration Font */
 @font-face{
@@ -22,7 +22,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 /* Desplazamiento Suave */
 html{
