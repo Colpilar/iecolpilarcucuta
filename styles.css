@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
 /* Decoration Font */
+
 @font-face{
-    font-family: 'Pesta';
-    src: url("fonts/PestaTahunBaru.ttf") format("truetype");
+    font-family: 'Brock';
+    src: url("fonts/BrockScript.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -158,16 +159,17 @@ Inicio INDEX.HTML
 }
 
 #home .content h1{
-    font-family: 'Pesta', sans-serif;
+    font-family: 'Brock', sans-serif;
     font-size: 40px;
     margin-top: 80px;
     margin-bottom: 30px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 #home .content p{
-    font-size: 28px;
-    font-weight: 400;
+    font-family: 'Brock', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
     font-style: italic;
 }
 
@@ -608,7 +610,6 @@ footer{
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 40px;
-    grid-column: auto;
 }
 
 .contact-info .item{
@@ -617,20 +618,19 @@ footer{
     background-color: #574143;
     color: #f1f1f1;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: .3s linear;
+    cursor: pointer;
+    font-size: 15px;
 }
 
-.contact-info i{
+.contact-info .item i{
     display: block;
     font-size: 40px;
     line-height: 120px;
     height: 100px;
 }
 
-.contact-info .item p{
-    padding: 5px;
-}
 .contact-info .item:hover{
     background-color: #F85C52;
 }
