@@ -102,7 +102,7 @@ html{
 .navbar-menu a{
     color: #f1f1f1;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     margin-left: 30px;
     transition: .2s linear;
 }
@@ -161,8 +161,7 @@ Inicio INDEX.HTML
 #home .content h1{
     font-family: 'Brock', sans-serif;
     font-size: 40px;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin: 100px 0 30px 0;
     font-weight: 500;
 }
 
@@ -186,7 +185,7 @@ section{
     font-size: 28px;
     padding-bottom: 30px;
     color: #1F1F1F;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 /* Separador del Título */
@@ -216,8 +215,8 @@ section{
     margin-bottom: 30px;
     color: #1F1F1F;
     font-style: italic;
-    font-weight: 700;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 /* Contenido de Izquierda y derecha */
@@ -225,10 +224,10 @@ section{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
-.left{
+.left, .rigth{
     width: 200px;
     height: 200px;
     border-radius: 25%;
@@ -237,13 +236,9 @@ section{
 }
 
 .rigth{
-    width: 200px;
-    height: 200px;
-    border-radius: 25%;
-    margin-left: 60px;
+    margin: 0 0 0 60px;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.30);
     cursor: pointer;
-    overflow: hidden;
 }
 
 .rigth video{
@@ -252,53 +247,49 @@ section{
     outline: none;
     transition: .2s linear;
 }
-.rigth video:hover{
-    transform: scale(1.1);
-}
+
 
 .about-text{
     flex: 1;
 }
 
 .about-text h2{
-    font-size: 26px;
+    font-size: 22px;
     color: #1F1F1F;
     font-weight: 700;
 }
 
 .about-text p{
-    font-size: 18px;
+    font-size: 17px;
     text-align: justify;
-    font-weight: normal;
-    line-height: 26px;
+    font-weight: 400;
+    line-height: 24px;
     margin-top: 20px;
     color: #1F1F1F;
 }
 
-section.map{
-    width: 100%;
-}
-
-section.map iframe{
+.map iframe{
     width: 100%;
     height: 400px;
     border-radius: 4px;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.40);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.40);    
 }
 
 /* Barra Separadora */
-section.dark{
+.dark{
     background-color: #1F1F1F;
-    padding: 30px 10px;
+    padding: 30px 20px;
 }
-section.dark .section-title{
+
+.dark .section-title{
     color: #fafafa;
-    font-weight: 400;
 }
-section.dark .section-title::before{
+
+.dark .section-title::before{
     background-color: #f1f1f1;
 }
-section.dark .section-title::after{
+
+.dark .section-title::after{
     border: 4px solid #1F1F1F;
 }
 
@@ -316,20 +307,19 @@ section.dark .section-title::after{
     width: calc(33% - 20px);
     text-align: center;
     margin: 10px 0;
-    padding: 20px 20px;
+    padding: 20px;
 }
 
 .dbox a{
     color: #f1f1f1;
-    font-size: 18px;
+    font-size: 17px;
     transition: .2s linear;
-    font-weight: normal;
+    font-weight: 400;
     transition: .2s linear;
 }
 
 .dbox a:hover{
-    text-shadow: 0 0px 10px rgba(255, 254, 254, 0.5);
-    /*border-bottom: 2px solid #1F1F1F;*/
+    text-shadow: 7px 7px 3px rgba(255, 254, 254, 0.5);
 }
 /* 
 FIN INDEX.HTML
@@ -349,9 +339,9 @@ INICIO ABOUT.HTML
 
 .block{
     width: calc(50% - 20px);
-    background-color: #FFFEFE;
+    background-color: #f1f1f1;
     border: 1px dashed #1F1F1F;
-    border-radius: 4px;
+    border-radius: 6px;
     margin: 10px 0;
     padding: 30px;
     position: relative;
@@ -390,7 +380,7 @@ INICIO ABOUT.HTML
     font-size: 16px;
     margin: 10px 0;
     color: #1F1F1F;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: underline;
 }
 /* Contenido de la sección */
@@ -413,10 +403,10 @@ Sección Himno ColPilar
 .strophe {
     width: calc(33% - 20px);
     text-align: center;
-    border: 1px dashed #F3EED9;
+    border: 1px dashed #f1f1f1;
     border-radius: 6px;
-    margin: 20px 0;
-    padding: 20px 20px;
+    margin: 10px 0;
+    padding: 15px;
 }
 
 .player {
@@ -439,21 +429,20 @@ Sección Himno ColPilar
 }
 
 .strophe h4, .player h4{
-    font-family: 'Zephiroth', sans-serif;
+    font-family: 'Brock', sans-serif;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 6px;
     color: #f1f1f1;
-    text-decoration: underline;
 }
 
 .strophe p{
-    font-weight: 400;
-    font-size: 17px;
+    font-weight: 300;
+    font-size: 16px;
     margin-bottom: 6px;
     color: #f1f1f1;
     font-style: italic;
-    line-height: 26px;
+    line-height: 20px;
 }
 
 /* Símbolos Institucionales */
@@ -528,8 +517,8 @@ footer{
 
 .footer-links ul h3{
     color: #1F1F1F;
-    font-weight: bold;
-    font-size: 17px;
+    font-weight: 700;
+    font-size: 16px;
     padding: 15px 0px;
 }
 
@@ -540,7 +529,7 @@ footer{
     font-weight: 400;
 }
 
-.footer-links ul li{
+.footer-links ul li, a{
     margin: 10px 0px;
     color: #1f1f1f;
     font-size: 15px;
@@ -548,14 +537,8 @@ footer{
     line-height: 200%;
 }
 
-.footer-links ul li a{
-    color: #1F1F1F;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 200%;
-}
 .footer-links ul li a:hover{
-    text-shadow: 0 5px 3px rgba(111, 0, 22, 0.9);
+    text-shadow: 7px 7px 3px rgba(111, 0, 22, 0.9);
 }
 
 .footer-links ul li i{
@@ -571,17 +554,18 @@ footer{
     color: #FFFEFE;
     font-size: 15px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .copyright a{
     font-size: 16px;
     color: #FFFEFE;
-    font-weight: 300;
-    opacity: .8;
+    font-weight: 400;
+    opacity: .7;
+    transition: .2s linear;
 }
 .copyright a:hover{
-    font-weight: 400;
+    font-weight: 500;
     opacity: 1;
 }
 
@@ -594,7 +578,9 @@ footer{
     width: 50px;
     height: 50px;
     background-color: #6f0016;
-    border: solid 2px #F85C52;
+    border: none;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.30);
     border-radius: 50px;
     cursor: pointer;
     color: #FFFEFE;
