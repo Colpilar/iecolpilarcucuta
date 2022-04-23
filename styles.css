@@ -438,11 +438,19 @@ Sección Himno ColPilar
 
 .strophe p{
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 6px;
     color: #f1f1f1;
     font-style: italic;
     line-height: 20px;
+}
+
+.composer {
+    color: #f1f1f1;
+    margin: 15px;
+    font-size: 15px;
+    font-weight: 100;
+    font-style: italic;
 }
 
 /* Símbolos Institucionales */
@@ -453,11 +461,12 @@ Sección Himno ColPilar
 }
 
 .simbol {
-    width: 400px;
+    width: calc(50% - 20px);
+    height: 100%;
     text-align: center;
     border: 2px dashed #6F0016;
     border-radius: 6px;
-    margin: 10px 0;
+    margin: 10px 1px;
     color: #1F1F1F;
     transition: .2s linear;
 }
@@ -467,7 +476,7 @@ Sección Himno ColPilar
 
 .simbol img{
     width: 100%;
-    height: 350px;
+    height: 300px;
     border-radius: 6px 6px 0 0;
     border-bottom: 2px dashed #6f0016;
     margin-bottom: 6px;
@@ -476,18 +485,19 @@ Sección Himno ColPilar
 
 .simbol h2{
     font-weight: 700;
-    font-size: 18px;
+    font-size: 17px;
     padding: 10px 20px;
     color: #1F1F1F;
 }
 
 .simbol p{
-    font-size: 17px;
+    font-size: 15px;
     text-align: center;
     line-height: 26px;
     padding: 15px;
     color: #1F1F1F;
 }
+
 
 
 
@@ -731,4 +741,6 @@ footer{
     }
 
 }
+
+
 
