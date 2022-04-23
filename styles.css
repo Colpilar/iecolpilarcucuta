@@ -228,8 +228,8 @@ section{
 }
 
 .left, .rigth{
-    width: 210px;
-    height: 210px;
+    width: 220px;
+    height: 220px;
     border-radius: 15%;
     margin-right: 60px;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.30);
@@ -237,15 +237,14 @@ section{
 
 .rigth{
     margin: 0 0 0 60px;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.30);
     cursor: pointer;
 }
 
-.rigth video{
+.rigth .video{
     width: 100%;
     height: 100%;
-    outline: none;
-    transition: .2s linear;
+    object-fit: cover;
+    border-radius: 15%;
 }
 
 
@@ -744,3 +743,7 @@ footer{
 
 
 
+
+.video {
+    
+}
