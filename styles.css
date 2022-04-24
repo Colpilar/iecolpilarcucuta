@@ -243,10 +243,11 @@ section{
 .rigth .video{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 15%;
+    object-fit: fill;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
 }
-
 
 .about-text{
     flex: 1;
