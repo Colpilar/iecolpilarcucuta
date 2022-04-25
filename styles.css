@@ -2,17 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
 /* Decoration Font */
-
 @font-face{
     font-family: 'Brock';
     src: url("fonts/BrockScript.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face{
-    font-family: 'Zephiroth';
-    src: url("fonts/Zephiroth.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -31,7 +23,7 @@ html{
 }
 /* Selección de Texto */
 ::selection{
-    background-color: rgba(255, 69, 0, 0.31);
+    background-color: rgba(255, 69, 0, 0.35);
 }
 /* Barra de Desplazamiento */
 ::-webkit-scrollbar{
@@ -60,16 +52,16 @@ html{
     margin: auto;
     padding: 0 40px;
 }
-
+/* Contenedor Barra de Navgación */
 .navbar .inner-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+/* Logo */
 .logo{
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     background-position: center;
     background-image: url("img/Logo.png");
     background-size: contain;
@@ -101,7 +93,7 @@ html{
 /* Enlaces de Barra de Navegación */
 .navbar-menu a{
     color: #f1f1f1;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     margin-left: 30px;
     transition: .2s linear;
@@ -123,14 +115,6 @@ html{
     box-shadow: 0 5px 10px rgba(0,0,0, .30);
 }
 
-.sticky .navbar-menu a{
-    color: #f1f1f1;
-}
-
-.sticky .menu-toggler span{
-    background-color: #f1f1f1;
-}
-
 
 /* 
 Inicio INDEX.HTML 
@@ -139,7 +123,7 @@ Inicio INDEX.HTML
 #home{
     height: 100vh;
     min-height: 500px;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.50) 75%), url("./img/background.jpg");
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 75%), url("./img/background.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -230,14 +214,13 @@ section{
 .left, .rigth{
     width: 220px;
     height: 220px;
-    border-radius: 15%;
-    margin-right: 60px;
+    border-radius: 10%;
+    margin: 0 60px 0 0;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.30);
 }
 
 .rigth{
     margin: 0 0 0 60px;
-    cursor: pointer;
 }
 
 .rigth .video{
@@ -260,7 +243,7 @@ section{
 }
 
 .about-text p{
-    font-size: 17px;
+    font-size: 16px;
     text-align: justify;
     font-weight: 400;
     line-height: 24px;
@@ -270,7 +253,7 @@ section{
 
 .map iframe{
     width: 100%;
-    height: 400px;
+    height: 420px;
     border-radius: 6px;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.40);    
 }
@@ -282,7 +265,7 @@ section{
 }
 
 .dark .section-title{
-    color: #fafafa;
+    color: #f1f1f1;
 }
 
 .dark .section-title::before{
@@ -306,13 +289,12 @@ section{
 .dbox{
     width: calc(33% - 20px);
     text-align: center;
-    margin: 10px 0;
-    padding: 20px;
+    padding: 15px;
 }
 
 .dbox a{
     color: #f1f1f1;
-    font-size: 17px;
+    font-size: 16px;
     transition: .2s linear;
     font-weight: 400;
     transition: .2s linear;
@@ -431,7 +413,7 @@ Sección Himno ColPilar
 .strophe h4, .player h4{
     font-family: 'Brock', sans-serif;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 6px;
     color: #f1f1f1;
 }
@@ -535,7 +517,7 @@ footer{
 .footer-links ul p{
     color: #1F1F1F;
     font-size: 15px;
-    line-height: 200%;
+    line-height: 150%;
     font-weight: 400;
 }
 
@@ -596,6 +578,7 @@ footer{
     color: #FFFEFE;
     outline: none;
     display: none;
+    transition: .2s linear;
 }
 .goTop:hover{
     background-color: #8E232B;
@@ -615,8 +598,6 @@ footer{
     color: #f1f1f1;
     text-align: center;
     border-radius: 6px;
-    transition: .3s linear;
-    cursor: pointer;
     font-size: 15px;
 }
 
@@ -627,8 +608,11 @@ footer{
     height: 100px;
 }
 
-.contact-info .item:hover{
-    background-color: #F85C52;
+.contact iframe{
+    width: 100%;
+    height: 1500px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.40);      
 }
 
 /* Media Querys*/
@@ -642,15 +626,13 @@ footer{
   .navbar-menu{
     text-align: center;
     position: fixed;
-    height: 100vh;
+    height: 500vh;
     width: 50%;
-    background-color: #6F0016;
-    opacity: 0.8;
+    background-color: rgba(111, 0, 22, 0.80);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.50);
     top: 0;
     right: -100%;
-    max-width: 400px;
     padding: 80px 50px;
-    border: 2px solid #F85C52;
     transition: .3s linear;
   }
 
@@ -684,10 +666,14 @@ footer{
     }
     
     .left{
-        margin: 0 auto 60px;
+        width: 400px;
+        height: 300px;
+        margin: 0 auto 60px auto;
     }
     
     .rigth{
+        width: 400px;
+        height: 300px;
         margin: 60px auto 0;
     }
     
@@ -705,10 +691,6 @@ footer{
         margin-left: auto;
     }
     
-    .work{
-        width: calc(50% - 10px);
-    }
-    
     .contact-info .item{
         width: 100%;
         margin: 10px 0;
@@ -718,33 +700,124 @@ footer{
 
 @media screen and (max-width: 500px){
     
+    
+    .navbar-menu{
+        text-align: center;
+        position: fixed;
+        height: 500vh;
+        width: 50%;
+        background-color: rgba(111, 0, 22, 0.80);
+        box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.50);
+        top: 0;
+        right: -100%;
+        padding: 50px 30px;
+        transition: .3s linear;
+    }
+
+    .navbar-menu a{
+        opacity: 100%;
+        display: block;
+        font-size: 16px;
+        margin: 15px 0;
+    }
+    
     .inner-width{
-        padding: 0 20px;
+        padding: 0 30px;
     }
     
-    .skill{
-        width: 100%;
+    #home .content h1{
+        font-size: 28px;
+        margin: 100px 0 30px 0;
+        font-weight: 500;
     }
     
-    .service{
-        width: 100%;
+    #home .content p{
+       font-size: 20px; 
     }
     
-    .work{
-        width: 100%;
+    .section-title{
+        font-size: 22px;
     }
+    
+    .date{
+        font-size: 15px;
+    }
+
+    .dbox{
+        width: 100%;
+        padding: 8px;
+    }
+    
+    .simbol{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .footer-links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-links ul{
+        margin: 10px 0;
+    }
+
 }
 
-@media screen and (max-width: 250px){
+@media screen and (max-width: 200px){
+   
     .inner-width{
         padding: 0 10px;
     }
 
-}
-
-
-
-
-.video {
+    .navbar-menu{
+        text-align: center;
+        position: fixed;
+        height: 500vh;
+        width: 70%;
+        background-color: rgba(111, 0, 22, 0.80);
+        box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.50);
+        top: 0;
+        right: -100%;
+        padding: 50px 30px;
+        transition: .3s linear;
+    }
     
+    .navbar-menu a{
+        opacity: 100%;
+        display: block;
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    
+    #home .content h1{
+        font-size: 20px;
+        margin: 80px 0 40px 0;
+        font-weight: 500;
+    }
+    
+    #home .content p{
+        display: none;
+       font-size: 15px; 
+    }
+    
+    .section-title{
+        font-size: 18px;
+    }
+    
+    .date{
+        font-size: 15px;
+    }
+    
+    .contact-info{
+        display: none;
+    }
+    
+    section{
+        padding: 25px 5px;
+    }
+    
+    .footer-links{
+        grid-template-columns: 1fr;
+    }
 }
+
