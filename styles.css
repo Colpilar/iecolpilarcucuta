@@ -402,6 +402,7 @@ Sección Himno ColPilar
 }
 
 .player audio{
+    overflow: hidden;
     outline: none;
 }
 
@@ -813,7 +814,11 @@ footer{
     }
     
     section{
-        padding: 25px 5px;
+        padding: 35px 2px;
+    }
+    
+    .player, .strophe{
+        width: 100%;
     }
     
     .footer-links{
