@@ -663,7 +663,7 @@ footer{
   }
 
   .inner-width{
-        max-width: 800px;
+        max-width: 850px;
     }
     
     .left{
@@ -723,11 +723,17 @@ footer{
     }
     
     .inner-width{
-        padding: 0 30px;
+        /*
+        padding: 0 30px;*/
+        max-width: 480px;
+    }
+    
+    section{
+        padding: 30px 10px;
     }
     
     #home .content h1{
-        font-size: 28px;
+        font-size: 24px;
         margin: 100px 0 30px 0;
         font-weight: 500;
     }
@@ -761,7 +767,11 @@ footer{
     .footer-links ul{
         margin: 10px 0;
     }
-
+    
+    .copyright{
+    padding: 20px 10px;
+    }
+    
 }
 
 @media screen and (max-width: 200px){
