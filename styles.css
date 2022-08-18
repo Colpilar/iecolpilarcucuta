@@ -110,7 +110,7 @@ html{
 
 /*Posicionamiento fijo de la barra de navegación y cambio de color*/
 .sticky{
-    background-color: rgb(111, 0, 22);
+    background-color: #6f0016;
     padding: 18px 0;
     box-shadow: 0 5px 10px rgba(0,0,0, .30);
 }
@@ -410,8 +410,11 @@ Sección Himno ColPilar
 }
 
 .player audio::-webkit-media-controls-enclosure{
-    background: #f1f1f1;
+    background: rgba(241, 241, 241, 0.8);
+    color: red;
     border-radius: 6px;
+    -webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
 }
 
 .strophe h4, .player h4{
