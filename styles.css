@@ -457,7 +457,7 @@ Sección Himno ColPilar
     border-radius: 6px;
     margin: 10px 1px;
     color: #1F1F1F;
-    transition: .2s linear;
+    transition: .5s linear;
 }
 .simbol:hover{
     transform: scale(1.1);
@@ -537,7 +537,7 @@ footer{
 }
 
 .footer-links ul li a:hover{
-    text-shadow: 7px 7px 3px rgba(111, 0, 22, 0.9);
+    text-shadow: 3px 3px 5px rgba(111, 0, 22, 0.9);
 }
 
 .footer-links ul li i{
