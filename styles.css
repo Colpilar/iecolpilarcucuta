@@ -211,6 +211,21 @@ section{
     margin-bottom: 60px;
 }
 
+.video{
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .left, .rigth{
     width: 220px;
     height: 220px;
@@ -223,14 +238,6 @@ section{
     margin: 0 0 0 60px;
 }
 
-.rigth .video{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    border-radius: 6px;
-    overflow: hidden;
-    cursor: pointer;
-}
 
 .about-text{
     flex: 1;
@@ -298,10 +305,6 @@ section{
     transition: .2s linear;
     font-weight: 400;
     transition: .2s linear;
-}
-
-.dbox a:hover{
-    text-shadow: 7px 7px 3px rgba(255, 254, 254, 0.5);
 }
 /* 
 FIN INDEX.HTML
@@ -672,7 +675,7 @@ footer{
         margin: 0 auto 60px auto;
     }
     
-    .rigth{
+    .rigth .video{
         width: 100%;
         height: 350px;
         margin: 60px auto 0 auto;
